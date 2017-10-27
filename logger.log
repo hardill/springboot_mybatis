@@ -1,0 +1,786 @@
+2017-10-27 15:22:13.732  INFO 352 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 352 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:22:13.733  INFO 352 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:22:13.755  INFO 352 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@75db5df9: startup date [Fri Oct 27 15:22:13 CST 2017]; root of context hierarchy
+2017-10-27 15:22:14.003  WARN 352 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.karle.mapper]' package. Please check your configuration.
+2017-10-27 15:22:14.027  WARN 352 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.springboot.config]' package. Please check your configuration.
+2017-10-27 15:22:14.642 ERROR 352 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-27 15:22:14.642 ERROR 352 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]]
+2017-10-27 15:22:14.643  WARN 352 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': Could not bind properties to MapperProperties (prefix=mapper, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]]
+2017-10-27 15:22:14.650  INFO 352 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-27 15:22:14.654 ERROR 352 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target tk.mybatis.mapper.autoconfigure.MapperProperties@5f2f577 failed:
+
+    Property: mapper.mappers
+    Value: com.karle.tk.TkMapper
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-27 15:22:14.706  INFO 352 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 352 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:22:14.706  INFO 352 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:22:14.709  INFO 352 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1922e6d: startup date [Fri Oct 27 15:22:14 CST 2017]; root of context hierarchy
+2017-10-27 15:22:14.825  WARN 352 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.karle.mapper]' package. Please check your configuration.
+2017-10-27 15:22:14.831  WARN 352 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.springboot.config]' package. Please check your configuration.
+2017-10-27 15:22:15.032 ERROR 352 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-27 15:22:15.033 ERROR 352 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]]
+2017-10-27 15:22:15.033  WARN 352 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': Could not bind properties to MapperProperties (prefix=mapper, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]]
+2017-10-27 15:22:15.035  INFO 352 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-27 15:22:15.037 ERROR 352 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target tk.mybatis.mapper.autoconfigure.MapperProperties@1af7f54a failed:
+
+    Property: mapper.mappers
+    Value: com.karle.tk.TkMapper
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-27 15:22:15.041 ERROR 352 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e57cd70] to prepare test instance [org.springboot.dao.SpringBootMyBatisApplicationTests@37374a5e]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': Could not bind properties to MapperProperties (prefix=mapper, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': Could not bind properties to MapperProperties (prefix=mapper, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:334) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:291) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1620) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 44 common frames omitted
+Caused by: org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.TkMapper]]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.checkForBindingErrors(PropertiesConfigurationFactory.java:359) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.doBindPropertiesToTarget(PropertiesConfigurationFactory.java:276) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.bindPropertiesToTarget(PropertiesConfigurationFactory.java:240) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:329) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	... 57 common frames omitted
+
+2017-10-27 15:23:01.642  INFO 12308 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 12308 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:23:01.643  INFO 12308 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:23:01.665  INFO 12308 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@75db5df9: startup date [Fri Oct 27 15:23:01 CST 2017]; root of context hierarchy
+2017-10-27 15:23:01.907  WARN 12308 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.karle.mapper]' package. Please check your configuration.
+2017-10-27 15:23:01.931  WARN 12308 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.springboot.config]' package. Please check your configuration.
+2017-10-27 15:23:02.459 ERROR 12308 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-27 15:23:02.460 ERROR 12308 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.base.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]]
+2017-10-27 15:23:02.460  WARN 12308 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': Could not bind properties to MapperProperties (prefix=mapper, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.base.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]]
+2017-10-27 15:23:02.467  INFO 12308 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-27 15:23:02.470 ERROR 12308 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target tk.mybatis.mapper.autoconfigure.MapperProperties@756cf158 failed:
+
+    Property: mapper.mappers
+    Value: com.karle.tk.base.TkMapper
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-27 15:23:02.525  INFO 12308 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 12308 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:23:02.526  INFO 12308 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:23:02.528  INFO 12308 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5cc69cfe: startup date [Fri Oct 27 15:23:02 CST 2017]; root of context hierarchy
+2017-10-27 15:23:02.655  WARN 12308 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.karle.mapper]' package. Please check your configuration.
+2017-10-27 15:23:02.665  WARN 12308 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.springboot.config]' package. Please check your configuration.
+2017-10-27 15:23:02.876 ERROR 12308 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-27 15:23:02.876 ERROR 12308 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.base.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]]
+2017-10-27 15:23:02.876  WARN 12308 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': Could not bind properties to MapperProperties (prefix=mapper, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.base.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]]
+2017-10-27 15:23:02.878  INFO 12308 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-27 15:23:02.880 ERROR 12308 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target tk.mybatis.mapper.autoconfigure.MapperProperties@2a2bb0eb failed:
+
+    Property: mapper.mappers
+    Value: com.karle.tk.base.TkMapper
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-27 15:23:02.885 ERROR 12308 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e57cd70] to prepare test instance [org.springboot.dao.SpringBootMyBatisApplicationTests@37374a5e]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': Could not bind properties to MapperProperties (prefix=mapper, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.base.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mapper-tk.mybatis.mapper.autoconfigure.MapperProperties': Could not bind properties to MapperProperties (prefix=mapper, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.base.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:334) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:291) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1620) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 44 common frames omitted
+Caused by: org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mapper' on field 'mappers': rejected value [com.karle.tk.base.TkMapper]; codes [typeMismatch.mapper.mappers,typeMismatch.mappers,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mapper.mappers,mappers]; arguments []; default message [mappers]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'mappers'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.karle.tk.base.TkMapper]]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.checkForBindingErrors(PropertiesConfigurationFactory.java:359) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.doBindPropertiesToTarget(PropertiesConfigurationFactory.java:276) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.bindPropertiesToTarget(PropertiesConfigurationFactory.java:240) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:329) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	... 57 common frames omitted
+
+2017-10-27 15:24:17.967  INFO 14076 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 14076 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:24:17.968  INFO 14076 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:24:17.986  INFO 14076 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@75db5df9: startup date [Fri Oct 27 15:24:17 CST 2017]; root of context hierarchy
+2017-10-27 15:24:18.227  WARN 14076 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.karle.mapper]' package. Please check your configuration.
+2017-10-27 15:24:18.252  WARN 14076 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.springboot.config]' package. Please check your configuration.
+2017-10-27 15:24:18.824  INFO 14076 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.092 seconds (JVM running for 1.593)
+2017-10-27 15:24:18.839 ERROR 14076 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e57cd70] to prepare test instance [org.springboot.dao.SpringBootMyBatisApplicationTests@37374a5e]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springboot.dao.SpringBootMyBatisApplicationTests': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.karle.tk.TkMapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.karle.tk.TkMapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 29 common frames omitted
+
+2017-10-27 15:24:18.848  INFO 14076 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@75db5df9: startup date [Fri Oct 27 15:24:17 CST 2017]; root of context hierarchy
+2017-10-27 15:25:17.023  INFO 2444 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 2444 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:25:17.023  INFO 2444 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:25:17.044  INFO 2444 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:25:17 CST 2017]; root of context hierarchy
+2017-10-27 15:25:17.282  WARN 2444 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.karle.mapper]' package. Please check your configuration.
+2017-10-27 15:25:17.305  WARN 2444 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.springboot.config]' package. Please check your configuration.
+2017-10-27 15:25:17.895  INFO 2444 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.11 seconds (JVM running for 1.605)
+2017-10-27 15:25:17.912 ERROR 2444 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6b9651f3] to prepare test instance [org.springboot.dao.SpringBootMyBatisApplicationTests@7cbd213e]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springboot.dao.SpringBootMyBatisApplicationTests': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.karle.tk.TkMapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.karle.tk.TkMapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 29 common frames omitted
+
+2017-10-27 15:25:17.917  INFO 2444 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:25:17 CST 2017]; root of context hierarchy
+2017-10-27 15:26:22.136  INFO 9760 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 9760 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:26:22.137  INFO 9760 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:26:22.158  INFO 9760 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:26:22 CST 2017]; root of context hierarchy
+2017-10-27 15:26:23.000  WARN 9760 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Invocation of init method failed; nested exception is tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+2017-10-27 15:26:23.006  INFO 9760 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-27 15:26:23.014 ERROR 9760 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Invocation of init method failed; nested exception is tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1620) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) [spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.setSqlSource(MapperHelper.java:248) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:311) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:290) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.addPageInterceptor(MapperAutoConfiguration.java:75) ~[mapper-spring-boot-autoconfigure-1.1.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_151]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 43 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.setSqlSource(MapperTemplate.java:188) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.setSqlSource(MapperHelper.java:245) ~[mapper-3.4.4.jar:na]
+	... 53 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.EntityHelper.processField(EntityHelper.java:328) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.EntityHelper.initEntityNameMap(EntityHelper.java:230) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.getEntityClass(MapperTemplate.java:222) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.provider.SpecialProvider.insertList(SpecialProvider.java:54) ~[mapper-3.4.4.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_151]
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.setSqlSource(MapperTemplate.java:178) ~[mapper-3.4.4.jar:na]
+	... 54 common frames omitted
+
+2017-10-27 15:26:23.057  INFO 9760 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 9760 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:26:23.057  INFO 9760 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:26:23.059  INFO 9760 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3546d80f: startup date [Fri Oct 27 15:26:23 CST 2017]; root of context hierarchy
+2017-10-27 15:26:23.396  WARN 9760 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Invocation of init method failed; nested exception is tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+2017-10-27 15:26:23.398  INFO 9760 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-27 15:26:23.402 ERROR 9760 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Invocation of init method failed; nested exception is tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1620) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) [spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.setSqlSource(MapperHelper.java:248) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:311) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:290) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.addPageInterceptor(MapperAutoConfiguration.java:75) ~[mapper-spring-boot-autoconfigure-1.1.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_151]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 42 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.setSqlSource(MapperTemplate.java:188) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.setSqlSource(MapperHelper.java:245) ~[mapper-3.4.4.jar:na]
+	... 52 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.EntityHelper.processField(EntityHelper.java:328) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.EntityHelper.initEntityNameMap(EntityHelper.java:230) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.getEntityClass(MapperTemplate.java:222) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.provider.SpecialProvider.insertList(SpecialProvider.java:54) ~[mapper-3.4.4.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_151]
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.setSqlSource(MapperTemplate.java:178) ~[mapper-3.4.4.jar:na]
+	... 53 common frames omitted
+
+2017-10-27 15:26:23.403 ERROR 9760 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6b9651f3] to prepare test instance [org.springboot.dao.SpringBootMyBatisApplicationTests@7cbd213e]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Invocation of init method failed; nested exception is tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1620) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 26 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.setSqlSource(MapperHelper.java:248) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:311) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:290) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.addPageInterceptor(MapperAutoConfiguration.java:75) ~[mapper-spring-boot-autoconfigure-1.1.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_151]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 43 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.setSqlSource(MapperTemplate.java:188) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.setSqlSource(MapperHelper.java:245) ~[mapper-3.4.4.jar:na]
+	... 53 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: id - 该字段@GeneratedValue配置只允许以下几种形式:
+1.全部数据库通用的@GeneratedValue(generator="UUID")
+2.useGeneratedKeys的@GeneratedValue(generator=\"JDBC\")  
+3.类似mysql数据库的@GeneratedValue(strategy=GenerationType.IDENTITY[,generator="Mysql"])
+	at tk.mybatis.mapper.mapperhelper.EntityHelper.processField(EntityHelper.java:328) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.EntityHelper.initEntityNameMap(EntityHelper.java:230) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.getEntityClass(MapperTemplate.java:222) ~[mapper-3.4.4.jar:na]
+	at tk.mybatis.mapper.provider.SpecialProvider.insertList(SpecialProvider.java:54) ~[mapper-3.4.4.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_151]
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.setSqlSource(MapperTemplate.java:178) ~[mapper-3.4.4.jar:na]
+	... 54 common frames omitted
+
+2017-10-27 15:27:17.640  INFO 12312 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 12312 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:27:17.642  INFO 12312 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:27:17.664  INFO 12312 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:27:17 CST 2017]; root of context hierarchy
+2017-10-27 15:27:18.696  INFO 12312 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.316 seconds (JVM running for 1.81)
+2017-10-27 15:27:19.035 ERROR 12312 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'test2'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2229) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.16.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) [spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) [spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) [mybatis-spring-1.3.1.jar:1.3.1]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) [mybatis-spring-1.3.1.jar:1.3.1]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336) [mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84) [mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) [mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) [mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) [mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) [mybatis-3.4.5.jar:3.4.5]
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:143) [pagehelper-5.1.2.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) [mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy72.query(Unknown Source) [na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) [mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) [mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77) [mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) [mybatis-spring-1.3.1.jar:1.3.1]
+	at com.sun.proxy.$Proxy57.selectOne(Unknown Source) [na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) [mybatis-spring-1.3.1.jar:1.3.1]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82) [mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) [mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy65.selectOne(Unknown Source) [na:na]
+	at org.springboot.dao.SpringBootMyBatisApplicationTests.selectByCardNo(SpringBootMyBatisApplicationTests.java:25) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_151]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+
+2017-10-27 15:27:19.046  INFO 12312 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:27:17 CST 2017]; root of context hierarchy
+2017-10-27 15:27:51.177  INFO 12792 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 12792 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:27:51.178  INFO 12792 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:27:51.201  INFO 12792 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:27:51 CST 2017]; root of context hierarchy
+2017-10-27 15:27:52.212  INFO 12792 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.27 seconds (JVM running for 1.785)
+2017-10-27 15:27:52.629  INFO 12792 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:27:51 CST 2017]; root of context hierarchy
+2017-10-27 15:29:21.530  INFO 1232 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 1232 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:29:21.530  INFO 1232 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:29:21.553  INFO 1232 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:29:21 CST 2017]; root of context hierarchy
+2017-10-27 15:29:22.556  INFO 1232 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.254 seconds (JVM running for 1.748)
+2017-10-27 15:29:22.961  INFO 1232 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:29:21 CST 2017]; root of context hierarchy
+2017-10-27 15:39:21.928  INFO 240 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 240 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:39:21.929  INFO 240 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:39:21.955  INFO 240 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:39:21 CST 2017]; root of context hierarchy
+2017-10-27 15:39:22.977  INFO 240 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.279 seconds (JVM running for 1.78)
+2017-10-27 15:39:23.379  INFO 240 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:39:21 CST 2017]; root of context hierarchy
+2017-10-27 15:40:57.248  INFO 9544 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 9544 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:40:57.249  INFO 9544 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:40:57.268  INFO 9544 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:40:57 CST 2017]; root of context hierarchy
+2017-10-27 15:40:58.310  INFO 9544 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.299 seconds (JVM running for 1.787)
+2017-10-27 15:40:58.750  INFO 9544 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:40:57 CST 2017]; root of context hierarchy
+2017-10-27 15:42:56.877  INFO 11888 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 11888 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:42:56.878  INFO 11888 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:42:56.900  INFO 11888 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:42:56 CST 2017]; root of context hierarchy
+2017-10-27 15:42:57.896  INFO 11888 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.253 seconds (JVM running for 1.761)
+2017-10-27 15:42:58.268  INFO 11888 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:42:56 CST 2017]; root of context hierarchy
+2017-10-27 15:51:07.299  INFO 3360 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Starting SpringBootMyBatisApplicationTests on LAPTOP-HTLMM9F8 with PID 3360 (started by hardill in E:\work\workspace\springboot_mybatis)
+2017-10-27 15:51:07.300  INFO 3360 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : No active profile set, falling back to default profiles: default
+2017-10-27 15:51:07.324  INFO 3360 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:51:07 CST 2017]; root of context hierarchy
+2017-10-27 15:51:08.421  INFO 3360 --- [main] o.s.d.SpringBootMyBatisApplicationTests  : Started SpringBootMyBatisApplicationTests in 1.401 seconds (JVM running for 1.91)
+2017-10-27 15:51:08.828  INFO 3360 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@385e9564: startup date [Fri Oct 27 15:51:07 CST 2017]; root of context hierarchy
