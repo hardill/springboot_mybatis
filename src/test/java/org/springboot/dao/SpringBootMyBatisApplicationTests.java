@@ -49,7 +49,7 @@ public class SpringBootMyBatisApplicationTests {
 	public void update() {
 		User user = new User();
 
-		user.setId(4);
+		user.setId(14);
 		user.setUsername("lucy2");
 		mapper.updateByPrimaryKeySelective(user);
 
